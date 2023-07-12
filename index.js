@@ -9,4 +9,9 @@ app.get('/:id/exp/:exp', (req, res) => {
     }
 )
 
+app.get('/user/:id', (req, res) => {
+    res.send(`hello ${req.params.id}`)
+    }
+)
+
 app.listen(3000, () => console.log('Server ready'))
